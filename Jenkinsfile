@@ -1,4 +1,4 @@
-@Library('test-shared-library')_
+// @Library('test-shared-library')_
 
 pipeline {
     environment {
@@ -94,11 +94,11 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            script {
-                slackNotifier currentBuild.result
-            }
-        }
-    }
+    // post {
+    //     always {
+    //         script {
+    //             slackNotifier currentBuild.result
+    //         }
+    //     }
+    // }
 }
