@@ -37,6 +37,7 @@ pipeline {
                     sh '''
                         curl localhost > index.txt
                         grep -q "Welcome" index.txt
+                        rm index.txt
                     '''
                 }
             }
