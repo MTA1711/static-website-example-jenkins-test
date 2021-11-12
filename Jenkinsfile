@@ -4,8 +4,8 @@ pipeline {
     environment {
         IMAGE_NAME  = "web_application"
         IMAGE_TAG   = "latest"
-        STAGING_ENV = "mta1711_web_application-qa"
-        PROD_ENV    = "mta1711_web_application-prod"
+        STAGING_ENV = "mta1711-web-application-qa"
+        PROD_ENV    = "mta1711-web-application-prod"
     }
     agent none
     stages {
